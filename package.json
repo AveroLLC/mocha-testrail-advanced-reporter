@@ -1,9 +1,13 @@
 {
-  "name": "mocha-testrail-advanced-reporter",
-  "version": "1.0.1",
-  "description": "A mocha reporter that writes to testrail creating suites, tests and runs where necissary",
+  "name": "@avero/mocha-testrail-advanced-reporter",
+  "version": "1.1.0",
+  "description": "A mocha reporter that writes to testrail creating suites, tests and runs where necessary",
   "main": "index.js",
   "private": false,
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "keywords": [
     "mocha",
     "testrail",
@@ -18,24 +22,15 @@
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CommodoreBeard/mocha-testrail-advanced-reporter"
+    "url": "https://github.com/AveroLLC/mocha-testrail-advanced-reporter"
   },
   "bugs": {
-    "url": "https://github.com/CommodoreBeard/mocha-testrail-advanced-reporter/issues"
+    "url": "https://github.com/AveroLLC/mocha-testrail-advanced-reporter/issues"
   },
   "scripts": {
     "test": "nyc --reporter=lcov mocha --recursive && nyc report",
     "lint": "eslint .",
-    "prettier": "prettier --single-quote --write \"{*.js,!(node*)**/*.js}\"",
-    "commitmsg": "commitlint -e",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run prettier",
-      "npm run lint",
-      "git add"
-    ]
+    "prettier": "prettier --single-quote --write \"{*.js,!(node*)**/*.js}\""
   },
   "dependencies": {
     "bottleneck": "^2.19.5",
@@ -44,7 +39,7 @@
     "testrail-api": "^1.3.5"
   },
   "peerDependencies": {
-    "mocha": "^4"
+    "mocha": "^7"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
