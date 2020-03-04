@@ -8,6 +8,9 @@
     "index.js",
     "lib"
   ],
+  "publishConfig": {
+    "registry": "https://nexus.aws.averoinc.com/repository/npm-private/"
+  },
   "keywords": [
     "mocha",
     "testrail",
