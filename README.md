@@ -57,3 +57,5 @@ Test Run: https://instance.testrail.net/index.php?/runs/view/1
 **suiteName**: string suite name with which the tests are associated
 
 **autoCloseRun**: (boolean) whether to close the test run once the results have been submitted. Defaults to false.
+
+**milestoneId**: (string) the milestone ID to associate with the test run in TestRail. If not provided the run won't be associated with a milestone. 
