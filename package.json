@@ -1,6 +1,6 @@
 {
   "name": "@avero/mocha-testrail-advanced-reporter",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A mocha reporter that writes to testrail creating suites, tests and runs where necessary",
   "main": "index.js",
   "private": false,
